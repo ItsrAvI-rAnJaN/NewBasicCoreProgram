@@ -9,6 +9,8 @@ namespace BasicCoreProgram
             Console.WriteLine("\t\t\t\t#################################################");
             Console.WriteLine("\t\t\t\t\tWELCOME TO BASIC CORE PROGRAMS");
             Console.WriteLine("\t\t\t\t#################################################");
+            FlipCoin objFlipcoin=new FlipCoin();
+            objFlipcoin.CheckHeadTail();
             Console.ReadKey();
         }
     }
