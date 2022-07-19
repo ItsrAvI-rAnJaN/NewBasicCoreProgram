@@ -15,6 +15,7 @@ namespace BasicCoreProgram
             Console.WriteLine("3.Table Of Two up to 31");
             Console.WriteLine("4.Print The Nth Harmonic Number");
             Console.WriteLine("5.Calculate the Factor of N Number");
+            Console.WriteLine("6.Compute Quotient & Remainder ");
             Console.Write("\nEnter The Choice of Question: ");
             int Choice=Convert.ToInt32(Console.ReadLine());
             switch (Choice)
@@ -38,6 +39,10 @@ namespace BasicCoreProgram
                 case 5:
                     Factors objfactor = new Factors();
                     objfactor.PrimeFactorization();
+                    break;
+                case 6:
+                    QuotientRemainder objqutRem=new QuotientRemainder();
+                    objqutRem.ComputQutnRemdr();
                     break;
 
                 default:
