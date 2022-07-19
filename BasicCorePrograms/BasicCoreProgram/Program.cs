@@ -16,6 +16,7 @@ namespace BasicCoreProgram
             Console.WriteLine("4.Print The Nth Harmonic Number");
             Console.WriteLine("5.Calculate the Factor of N Number");
             Console.WriteLine("6.Compute Quotient & Remainder ");
+            Console.WriteLine("7.Swap Two Number");
             Console.Write("\nEnter The Choice of Question: ");
             int Choice=Convert.ToInt32(Console.ReadLine());
             switch (Choice)
@@ -43,6 +44,10 @@ namespace BasicCoreProgram
                 case 6:
                     QuotientRemainder objqutRem=new QuotientRemainder();
                     objqutRem.ComputQutnRemdr();
+                    break;
+                case 7:
+                    SwapTwoNumber objswapnum = new SwapTwoNumber();
+                    objswapnum.SwapNumber();
                     break;
 
                 default:
