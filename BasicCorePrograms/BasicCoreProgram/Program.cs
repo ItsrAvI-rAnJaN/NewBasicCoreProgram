@@ -19,6 +19,7 @@ namespace BasicCoreProgram
             Console.WriteLine("7.Swap Two Number");
             Console.WriteLine("8.Check Whether Even or Odd");
             Console.WriteLine("9.Check Whether an Alphabet is Vowel or Consonant");
+            Console.WriteLine("10.Find the Largest Among Three Numbers");
             Console.Write("\nEnter The Choice of Question: ");
             int Choice=Convert.ToInt32(Console.ReadLine());
             switch (Choice)
@@ -59,7 +60,10 @@ namespace BasicCoreProgram
                     VowelsConsonants objVowCon = new VowelsConsonants();
                     objVowCon.CheckVowelConsonant();
                     break;
-
+                case 10:
+                    LargestNumber objLargestNum = new LargestNumber();
+                    objLargestNum.CheckLargestNo();
+                    break;
                 default:
                     Console.WriteLine("Enter Valid Question Number");
                     break;
