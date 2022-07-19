@@ -17,6 +17,7 @@ namespace BasicCoreProgram
             Console.WriteLine("5.Calculate the Factor of N Number");
             Console.WriteLine("6.Compute Quotient & Remainder ");
             Console.WriteLine("7.Swap Two Number");
+            Console.WriteLine("8.Check Whether Even or Odd");
             Console.Write("\nEnter The Choice of Question: ");
             int Choice=Convert.ToInt32(Console.ReadLine());
             switch (Choice)
@@ -48,6 +49,10 @@ namespace BasicCoreProgram
                 case 7:
                     SwapTwoNumber objswapnum = new SwapTwoNumber();
                     objswapnum.SwapNumber();
+                    break;
+                case 8:
+                    EvenOrOdd objEvenOdd = new EvenOrOdd();
+                    objEvenOdd.CheckEvenorOdd();
                     break;
 
                 default:
